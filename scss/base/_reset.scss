@@ -1,5 +1,5 @@
 @use '../abstracts/typography' as t;
-@use '../abstracts/mixins';
+@use '../abstracts/mixins' as *;
 
 *, *::before, *::after {
     box-sizing: border-box;

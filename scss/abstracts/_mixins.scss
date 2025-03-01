@@ -1,4 +1,4 @@
-@use '../abstracts/viewports';
+@use './viewports' as v;
 
 @mixin flexbox($direction, $justify, $align, $gap: null) {
     display: flex;
@@ -21,7 +21,7 @@
 }
 
 @mixin media-desktop {
-    @media (min-width: $desktop-viewport) {
+    @media (min-width: v.$desktop-viewport) {
         @content;
     }
 }
