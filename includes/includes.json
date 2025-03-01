@@ -1,3 +1,5 @@
 {
-    "topNavigation": "includes/_top_navigation.html"
+    "topNavigation": "includes/top_navigation.html",
+    "primaryFooter": "includes/primary_footer.html",
+    "secondaryFooter": "includes/secondary_footer.html"
 }
