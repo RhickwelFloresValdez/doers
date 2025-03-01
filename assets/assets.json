@@ -1,0 +1,21 @@
+{
+    "beach": "assets/images/beach-clean-up.jpg",
+    "becomeOneOfUs": "assets/images/become-one-of-us.jpg",
+    "donate": "assets/images/donate.JPG",
+    "feedingProgram": "assets/images/feeding-program.jpg",
+    "getInvolved": "assets/images/get-involved.jpg",
+    "turtles": "assets/images/turtles.jpg",
+    "whatItIsToVolunteer1": "assets/images/what-it-is-to-volunteer-1.jpg",
+    "cleanUpDrive": "assets/images/articles-banner/clean-up-drive.jpg",
+    "treePlanting": "assets/images/articles-banner/tree-planting.jpg",
+    "whatItIsToVolunteer2": "assets/images/articles-banner/what-it-is-to-volunteer-2.jpg",
+    "logoNoText": "assets/images/logos/logo-no-text.jpg",
+    "logoWithText": "assets/images/logos/logo-with-text.png",
+
+    "facebookoCoverPage": "assets/gif/facebook-cover-page.gif",
+    "turtleKeychain": "assets/gif/turtle-keychain.gif",
+    
+    "aDailyBeachCleanUp": "assets/videos/a-daily-beach-clean-up.MOV",
+    "bariBariEp1": "assets/videos/bari-bari-ep-1.mp4",
+    "endingVideo": "assets/videos/ending-video.mov"
+}
