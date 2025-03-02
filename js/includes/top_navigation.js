@@ -35,21 +35,33 @@ function hideMobileNav() {
     }, { once: true });
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    const basePath = window.location.pathname.includes("/doers/") ? "/doers/" : "/";
 
-// document.addEventListener("DOMContentLoaded", () => {
-    // console.log(document.getElementById("logo"));
-    // const basePath = window.location.pathname.includes("/doers/") ? "/doers/" : "/";
+    // Load the navigation first
+    fetch(basePath + "includes/includes.json")
+        .then(response => response.json())
+        .then(data => {
+            if (data.topNavigation) {
+                return fetch(basePath + data.topNavigation);
+            } else {
+                throw new Error("Navigation path not found in JSON.");
+            }
+        })
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("top-navigation").innerHTML = html;
 
-    // fetch(basePath + "assets/assets.json")
-    //     .then(response => response.json())
-    //     .then(assets => {
-    //         const logoImg = document.getElementById("logo");
-    //         if (logoImg && assets["logoWithText"]) {
-    //             logoImg.src = basePath + assets["logoWithText"];
-    //             console.log(wo)
-    //         } else {
-    //             console.error("Logo not found in JSON.");
-    //         }
-    //     })
-    //     .catch(error => console.error("Error loading assets:", error));
-// });
+            return fetch(basePath + "assets/assets.json");
+        })
+        .then(response => response.json())
+        .then(assets => {
+            const logoImg = document.getElementById("logo");
+            if (logoImg && assets["logoWithText"]) {
+                logoImg.src = basePath + assets["logoWithText"];
+            } else {
+                console.error("Logo not found in JSON.");
+            }
+        })
+        .catch(error => console.error("Error loading assets or navigation:", error));
+});
