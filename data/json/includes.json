@@ -1,0 +1,9 @@
+{
+    "headers": {
+        "header-nav": "includes/headers/header-nav.html"
+    },
+    "footers": {
+        "main-footer": "includes/footers/main-footer.html",
+        "secondary-footer": "includes/footers/secondary-footer.html"
+    }
+}

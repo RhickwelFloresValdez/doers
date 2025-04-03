@@ -1,0 +1,71 @@
+@use '../abstracts/typography' as t;
+@use '../abstracts/mixins' as *;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 14px;
+
+    @include media-desktop {
+        font-size: 19px;
+    }
+}
+
+body {
+    line-height: 1.5;
+
+    //Improves text rendering
+    -webkit-font-smoothing: antialiased;
+
+    font-family: t.$font-family;
+}
+
+// Set media defaults
+img, 
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+
+    font: inherit;
+    color: inherit;
+
+    transition: 0.3s all ease-in-out;
+}

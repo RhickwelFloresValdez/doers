@@ -1,0 +1,64 @@
+{
+    "favicons": {
+        "doers-favicon": "assets/favicons/doers-favicon.jpg"
+    },
+    "gifs": {
+        "about": {
+            "guiding-principles": "assets/gifs/about/guiding-principles.gif"
+        },
+        "campaign": {
+            "turtle-keychain": "assets/gifs/campaign/turtle-keychain.gif"
+        }
+    },
+    "icons": {
+        "dark": {
+            "arrow-right": "assets/icons/black/arrow-right.png" ,
+            "facebook": "assets/icons/black/facebook.png",
+            "instagram": "assets/icons/black/instagram.png",
+            "location": "assets/icons/black/location.png",
+            "telephone": "assets/icons/black/telephone.png",
+            "tiktok": "assets/icons/black/tiktok.png"
+        },
+        "white": {
+            "instagram": "assets/icons/white/instagram.png",
+            "location": "assets/icons/white/location.png",
+            "telephone": "assets/icons/white/telephone.png",
+            "tiktok": "assets/icons/white/tiktok.png"
+        }
+    },
+    "images": {
+        "article-banners": {
+            "clean-up-drives": "assets/images/article-banners/clean-up-drives.jpg",
+            "turtle-releasing": "assets/images/article-banners/turtle-releasing.PNG"
+        },
+        "campaigns": {
+            "be-on-of-us": "assets/images/campaigns/be-one-of-use.jpg",
+            "donate": "assets/images/campaigns/donate.JPG"
+        },
+        "founders": {
+            "miguel-vargas": "assets/images/founders/migues-vargal.jpg",
+            "venus-angelyka": "assets/images/founders/venus-angelyka.jpg"
+        },
+        "heroes": {
+            "get-involved": "assets/images/heroes/get-involved.jpg",
+            "volunteer": "assets/images/heroes/volunteer.jpg"
+        },
+        "impacts": {
+            "baby-turtles": "assets/images/impacts/baby-turtles.jpg",
+            "blood-drives": "assets/images/impacts/blood-drives.jpg",
+            "clean-up-drives": "assets/images/impacts/clean-up-drives.jpg",
+            "feeding-program": "assets/images/impacts/feeding-program.jpg",
+            "tree-planting": "assets/images/impacts/tree-planting.jpg"
+        }
+    },
+    "logos": {
+        "doers-logo-with-text": "assets/images/logos/doers-logo-with-text.png"
+    },
+    "videos": {
+        "bar-bari": {
+            "bari-bar-ep1": "assets/videos/bari-bari/bari-bari-ep1.mp4"
+        },
+        "beach-clean-up": "assets/videos/beach-clean-up.MOV",
+        "kids-waving": "assets/videos/kids-waving.mov"
+    }
+}
