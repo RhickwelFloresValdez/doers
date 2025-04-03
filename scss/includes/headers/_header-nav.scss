@@ -1,0 +1,86 @@
+@use '../../abstracts/abstracts' as a;
+
+.header-nav {
+    @include a.position(fixed, 0, 0, none, 0, 999);
+    @include a.flexbox(row, space-between, center);
+
+    background-color: a.$white;
+    border-bottom: 1px solid a.$light-gray-100;
+    padding: 1em 1.5em;
+
+    @include a.media-desktop {
+        padding: 1em 2.5em;
+    }
+
+    button {
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+    }
+
+    color: a.$dark-gray;
+
+    &__header {
+        @include a.flexbox(column, center, start, 0.5em);
+
+        @include a.media-desktop {
+            @include a.flexbox(row, center, center, 1.5em);
+        }
+    }
+
+    &__logo {
+        width: 120px;
+
+        @include a.media-desktop {
+            width: 150px;
+        }
+    }
+
+    &__heading {
+        max-width: 150px;
+
+        font-size: a.$fs-small;
+        font-weight: a.$fw-medium;
+
+        @include a.media-desktop {
+            font-size: a.$fs-regular;
+            margin-top: 5px;
+            max-width: 170px;
+        }
+    }
+
+    &__x-menu {
+        @include a.position(absolute, 0, 0, none, none, null);
+        margin: 35px 15px 0 0;
+    }
+
+    &__desktop-nav {
+        @include a.flexbox(row, center, center, 1.5em);
+    }
+
+    &__hide-on-mobile {
+        display: none;
+
+        @include a.media-desktop {
+            display: block;
+        }
+    }
+
+    &__mobile-nav {
+        @include a.position(fixed, 0, 0, 0, 0, 999);
+        @include a.flexbox(column, center, center, 1.5em);
+        display: none;
+
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        
+        color: a.$white; 
+    }
+
+    &__mobile-menu {
+        display: block;
+
+        @include a.media-desktop {
+            display: none;
+        }
+    }
+}

@@ -62,4 +62,139 @@ a {
   font: inherit;
   color: inherit;
   transition: 0.3s all ease-in-out;
+}
+
+.slide-in-top {
+  animation: slide-in-top 500ms ease;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.slide-out-top {
+  animation: slide-out-top 500ms;
+}
+
+@keyframes slide-out-top {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-1000px);
+  }
+}
+.header-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: none;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #C0D0CF;
+  padding: 1em 1.5em;
+  color: #443F3F;
+}
+@media (min-width: 770px) {
+  .header-nav {
+    padding: 1em 2.5em;
+  }
+}
+.header-nav button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+.header-nav__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5em;
+}
+@media (min-width: 770px) {
+  .header-nav__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+  }
+}
+.header-nav__logo {
+  width: 120px;
+}
+@media (min-width: 770px) {
+  .header-nav__logo {
+    width: 150px;
+  }
+}
+.header-nav__heading {
+  max-width: 150px;
+  font-size: 0.833rem;
+  font-weight: 600;
+}
+@media (min-width: 770px) {
+  .header-nav__heading {
+    font-size: 1rem;
+    margin-top: 5px;
+    max-width: 170px;
+  }
+}
+.header-nav__x-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: none;
+  left: none;
+  margin: 35px 15px 0 0;
+}
+.header-nav__desktop-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+.header-nav__hide-on-mobile {
+  display: none;
+}
+@media (min-width: 770px) {
+  .header-nav__hide-on-mobile {
+    display: block;
+  }
+}
+.header-nav__mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  color: #FFFFFF;
+}
+.header-nav__mobile-menu {
+  display: block;
+}
+@media (min-width: 770px) {
+  .header-nav__mobile-menu {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
