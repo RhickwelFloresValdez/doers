@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Determine base path depending on URL structure
-    const basePath = window.location.pathname.includes("/doers-website/") ? "/doers-website/" : "/";
+    const basePath = window.location.pathname.includes("/doers/") ? "/doers/" : "/";
 
     // Load navigation HTML
     fetch(basePath + "data/json/includes.json")
